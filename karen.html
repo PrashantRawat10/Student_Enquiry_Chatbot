@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>DIT | Student Info Chatbot</title>
+
+    <!-- fonticons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- fonticons -->
+    <!-- google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+
+    <!-- stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- stylesheet -->
+  </head>
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "17ab2b50-bdd5-42c3-9b16-e538b696949d", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "2141daa1-634b-4ae9-9194-006d2dded133", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+    });
+  </script>
+
+  <body>
+    <header class="container">
+      <div class="nav-icon"><i class="fas fa-bars"></i></div>
+
+      <div class="mobile-navbar">
+        <ul class="menu closed">
+          <li>
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#projects">Sections</a></li>
+          <li><a href="#contact-me">Contact Us</a></li>
+        </ul>
+      </div>
+      <nav id="navbar" class="nav">
+        <a href="#">About</a>
+        <a href="#projects">Sections</a>
+        <a href="#contact-me">Contact Us</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="welcome-sec" id="welcome-section">
+       
+        <div class="welcome-part">
+          <div class="photo-div">
+            <img src="dit.png" alt="profile-picture" class="photo" />
+          </div>
+          <h1>Hi, This is <span> DIT </span></h1>
+          <p>We welcome you to our web page</p>
+        </div>
+
+        <div class="about not-visible" id="about-me">
+          <h2>About Us</h2>
+          <p>
+            We are the best private university. We are ranked at 129 on the NIRF
+            rankings. The University acquired the status of
+            Deemed University in 2013.
+          </p>
+          <div class="social">
+            <a
+              class="profile-link"
+              href="https://www.facebook.com/DITUniversity.edu/"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              class="profile-link"
+              href="https://www.instagram.com/dituniversity/?hl=en"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="profile-link"
+              href="https://twitter.com/dit_university?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="profile-link"
+              href="https://www.linkedin.com/school/dit-university/?originalSubdomain=in"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        
+        <div class="contain">
+          <div class="circle left colored"></div>
+          <div class="circle right"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-sec">
+        <div class="sec-title">
+          <h2>SECTIONS</h2>
+        </div>
+
+        <div class="project-container">
+          <div class="proj-contain project-1">
+            <img
+              class="proj-screenshot"
+              src="academics.jpg"
+              alt="desktop-preview"
+            />
+
+            <div class="project-title">
+              <h6>Academics</h6>
+              <p>
+                This section consists of all the academics related information
+                for various branches.
+              </p>
+              <div class="links">
+                <ul>
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                  <li><i class="fab fa-sass"></i></li>
+                </ul>
+                <a
+                  class="website-link"
+                  href="https://www.dituniversity.edu.in/academic-calendar"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-contain project-2">
+            <img
+              class="proj-screenshot"
+              src="companies.jpg"
+              alt="desktop-preview"
+            />
+
+            <div class="project-title">
+              <h6>Placements</h6>
+              <p>
+                This section shows the companies visisted for the placements for
+                all programs.
+              </p>
+              <div class="links">
+                <ul>
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.dituniversity.edu.in/placements/placement-highlights"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-contain project-3">
+            <img class="proj-screenshot" src="achieve.jpg" alt="desktop-view" />
+
+            <div class="project-title">
+              <h6>Acheivements</h6>
+              <p>
+                This section consist of all the achievements of DIT in its
+                successful 20 years.
+              </p>
+              <div class="links">
+                <ul>
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.dituniversity.edu.in/about-us/rankings-and-collaborations"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-contain project-4">
+            <img class="proj-screenshot" src="events.jpg" alt="desktop-view" />
+
+            <div class="project-title">
+              <h6>Programs</h6>
+              <p>
+                This section consist of all the programs information in the
+                ongoing session.
+              </p>
+              <div class="links">
+                <ul>
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.dituniversity.edu.in/ug-courses/btech-computer-science-and-engineering"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+              x
+            </div>
+          </div>
+        </div>
+        <a class="more show-link"
+          >show More<i class="fas fa-chevron-circle-down"></i
+        ></a>
+        <a class="less show-link toggle"
+          >show less<i class="fas fa-chevron-circle-up"></i
+        ></a>
+      </section>
+    </div>
+
+    <section id="contact-me" class="contact">
+      <div class="contact-div">
+        <h2>Contact Us</h2>
+
+        <p>Have any query in mind? <span>Say Hello at:</span></p>
+
+        <p class="email">bhattk808@gmail.com</p>
+      </div>
+
+      <div class="social">
+        <a
+          class="profile-link"
+          href="https://www.facebook.com/DITUniversity.edu/"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://www.instagram.com/dituniversity/?hl=en"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://twitter.com/dit_university?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://www.linkedin.com/school/dit-university/?originalSubdomain=in"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer id="footer">Copyright&copy;2020. All Rights Reserved.</footer>
+    <!--		Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!--		Jquery-->
+    <!--js script		-->
+    <script src="java.js"></script>
+    <!--js script		-->
+  </body>
+</html>
